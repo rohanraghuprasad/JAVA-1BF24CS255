@@ -10,7 +10,11 @@ class Student {
     Scanner sc = new Scanner(System.in);
     Subject[] subject;
 
-    Student() {
+    Student(String n, String u, double S)
+    {
+        this.name=n;
+        this.usn=u;
+        this.SGPA=S;
         subject = new Subject[8];
         for (int i = 0; i < 8; i++) {
             subject[i] = new Subject();
@@ -61,7 +65,7 @@ class Student {
 
         for (int i = 0; i < 2; i++) {
             System.out.println("\nEnter details for Student " + (i + 1) + ": ");
-            students[i] = new Student();
+            students[i] = new Student("","",0.0);
             students[i].getStudentDetails();
             students[i].getMarks();
             students[i].computeSGPA();
@@ -69,4 +73,5 @@ class Student {
             students[i].displayStudentInfo();
         }
     }
+
 }
