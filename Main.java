@@ -41,7 +41,6 @@ class Student {
             if (subject[i].grade <= 4)
                 subject[i].grade = 0;
         }
-        sc.nextLine(); // consume leftover newline
     }
 
     void computeSGPA() {
@@ -75,3 +74,4 @@ class Student {
     }
 
 }
+
