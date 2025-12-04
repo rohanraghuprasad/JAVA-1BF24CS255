@@ -10,10 +10,11 @@ public class Internals extends Student{
         int i;
         System.out.println("Enter CIE marks:");
         for(i=0;i<5;i++){
-            System.out.print("Enter marks for subject "+(i+1)+":");
+            System.out.print("Enter marks for subject "+(i+1)+": ");
             marksin[i]=scnr.nextInt();
             scnr.nextLine();
         }
     }
 
 }
+
