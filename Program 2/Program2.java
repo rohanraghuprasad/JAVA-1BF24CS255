@@ -37,7 +37,7 @@ class Student {
             if (subject[i].grade <= 4)
                 subject[i].grade = 0;
         }
-        sc.nextLine(); // consume leftover newline
+        sc.nextLine(); 
     }
 
     void calculateSGPA() {
@@ -61,7 +61,7 @@ public class Program2
     {
         public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Student[] students = new Student[2]; // for 2 students
+        Student[] students = new Student[2]; 
 
         for (int i = 0; i < 2; i++) {
             System.out.println("\nEnter details for Student " + (i + 1) + ": ");
@@ -73,4 +73,5 @@ public class Program2
             students[i].displayStudentInfo();
         }
     }
+
     }
